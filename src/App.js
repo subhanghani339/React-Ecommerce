@@ -1,7 +1,17 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "Home" from "./"
 
 const App = () => {
-  return <div>Welcome to Thapa React E-Commerce Website</div>;
+  return (
+  <BrowserRouter>
+  
+  <Routes>
+    <Route path="/" element={<Home />} />
+  </Routes>
+
+  </BrowserRouter>
+  );
 };
 
 export default App;
